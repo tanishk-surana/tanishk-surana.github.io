@@ -7,37 +7,72 @@
 <meta name="description" content="IB Diploma student in Bengaluru. Finance, economics and commercial strategy.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Public+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Public+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<div class="glow" aria-hidden="true"></div>
+<div class="progress" aria-hidden="true"><span id="progress-bar"></span></div>
+<div class="spotlight" id="spotlight" aria-hidden="true"></div>
+<div class="grain" aria-hidden="true"></div>
+
+<nav class="dots" aria-label="Sections">
+  <a href="#work" data-label="Work"><span></span></a>
+  <a href="#competitions" data-label="Competitions"><span></span></a>
+  <a href="#experience" data-label="Experience"><span></span></a>
+  <a href="#programmes" data-label="Programmes"><span></span></a>
+  <a href="#education" data-label="Education"><span></span></a>
+  <a href="#leadership" data-label="Leadership"><span></span></a>
+  <a href="#skills" data-label="Skills"><span></span></a>
+  <a href="#contact" data-label="Contact"><span></span></a>
+</nav>
 
 <main class="page">
 
   <header class="intro">
-    <h1 class="name">
-      <span class="reveal"><span class="reveal-inner">Tanishk</span></span>
-      <span class="reveal"><span class="reveal-inner">Surana</span></span>
+    <h1 class="name" aria-label="Tanishk Surana">
+      <span class="line" data-text="Tanishk"></span>
+      <span class="line alt" data-text="Surana"></span>
     </h1>
-    <p class="statement fade" style="--delay: .5s">
+
+    <p class="statement fade" style="--delay: .9s">
       IB Diploma student in Bengaluru, heading into finance. I like the part
       of the work where a spreadsheet has to survive contact with a real
       commercial decision.
     </p>
-    <p class="subjects fade" style="--delay: .65s">
+
+    <p class="subjects fade" style="--delay: 1.05s">
       Economics HL, Computer Science HL, Mathematics AI HL,
       English A SL, Hindi B SL, Psychology SL.
-      Everything below links to the certificate or the document itself.
     </p>
   </header>
 
-  <section class="section" aria-labelledby="work">
-    <h2 class="section-title" id="work">Selected work</h2>
+  <div class="ticker fade" style="--delay: 1.2s" aria-hidden="true">
+    <div class="ticker-track">
+      <div class="ticker-run">
+        <span class="tick"><b>World Economics Cup</b> 98.5<i>/100</i> <em>Highest Distinction</em></span>
+        <span class="tick"><b>National Finance Olympiad</b> 52<i>/55</i> <em>AIR 78 of 2,584</em></span>
+        <span class="tick"><b>IB Grade 11</b> 38<i>/42</i></span>
+        <span class="tick"><b>Intl. Economics Olympiad</b> <em>AIR 69</em></span>
+        <span class="tick"><b>NFO Level I</b> 48<i>/50</i> <em>9th in grade</em></span>
+        <span class="tick"><b>ICSE Grade 10</b> 84<i>%</i></span>
+      </div>
+      <div class="ticker-run">
+        <span class="tick"><b>World Economics Cup</b> 98.5<i>/100</i> <em>Highest Distinction</em></span>
+        <span class="tick"><b>National Finance Olympiad</b> 52<i>/55</i> <em>AIR 78 of 2,584</em></span>
+        <span class="tick"><b>IB Grade 11</b> 38<i>/42</i></span>
+        <span class="tick"><b>Intl. Economics Olympiad</b> <em>AIR 69</em></span>
+        <span class="tick"><b>NFO Level I</b> 48<i>/50</i> <em>9th in grade</em></span>
+        <span class="tick"><b>ICSE Grade 10</b> 84<i>%</i></span>
+      </div>
+    </div>
+  </div>
+
+  <section class="section" id="work" aria-labelledby="work-t">
+    <h2 class="section-title" id="work-t"><span>Selected work</span></h2>
 
     <div class="timeline">
-      <article class="entry watch">
+      <article class="entry feature watch">
         <p class="entry-date">Dec 2025&ndash;<br>Feb 2026</p>
         <div class="entry-body">
           <h3 class="entry-title">Go-to-market strategy for Orangewood Labs</h3>
@@ -53,12 +88,15 @@
             finding was that SMEs buy automation to reduce operational
             instability, not to innovate, so the winning position is
             predictable deployment rather than hardware sophistication.
-            We recommended machine tending and industrial pick-and-place as
-            primary focus, visual inspection selectively, and airport
-            bartending as pilot only.
           </p>
+          <ul class="verdicts">
+            <li><span class="v go">Proceed</span> Machine tending</li>
+            <li><span class="v go">Proceed</span> Industrial pick-and-place</li>
+            <li><span class="v mid">Selective</span> Visual inspection</li>
+            <li><span class="v hold">Pilot only</span> Airport bartending</li>
+          </ul>
           <p class="entry-links">
-            <a href="orangewood-gtm-report.pdf">Read the report (28 pages, PDF)</a>
+            <a class="cta" href="orangewood-gtm-report.pdf">Read the report, 28 pages</a>
           </p>
           <p class="note">
             Team project with Chaitanya Chhajer, Maryam Bilal Ahmed,
@@ -69,18 +107,15 @@
     </div>
   </section>
 
-  <section class="section" aria-labelledby="competitions">
-    <h2 class="section-title" id="competitions">Competitions and olympiads</h2>
+  <section class="section" id="competitions" aria-labelledby="comp-t">
+    <h2 class="section-title" id="comp-t"><span>Competitions and olympiads</span></h2>
 
     <div class="timeline">
       <article class="entry watch">
         <p class="entry-date">Apr 2026</p>
         <div class="entry-body">
           <h3 class="entry-title">World Economics Cup, Highest Distinction</h3>
-          <p>
-            98.5 out of 100 on the integrated objective test, with no
-            penalties.
-          </p>
+          <p>98.5 out of 100 on the integrated objective test, with no penalties.</p>
           <p class="entry-links">
             <a href="wec-certificate.pdf">Certificate</a>
             <a href="wec-transcript.pdf">Score breakdown</a>
@@ -93,10 +128,10 @@
         <div class="entry-body">
           <h3 class="entry-title">National Finance Olympiad, All India Rank 78</h3>
           <p>
-            52 out of 55 at the national level, 78th of 2,584 in grade,
-            against a grade average of 78%. Full marks in entrepreneurial
-            finance and in money and banking. Awarded the Certificate of
-            National Excellence.
+            52 out of 55 at the national level, 78th of 2,584 in grade, against
+            a grade average of 78%. Full marks in entrepreneurial finance and
+            in money and banking. Awarded the Certificate of National
+            Excellence.
           </p>
           <p class="entry-links">
             <a href="nfo-national-certificate.pdf">Certificate</a>
@@ -141,8 +176,8 @@
     </div>
   </section>
 
-  <section class="section" aria-labelledby="experience">
-    <h2 class="section-title" id="experience">Experience</h2>
+  <section class="section" id="experience" aria-labelledby="exp-t">
+    <h2 class="section-title" id="exp-t"><span>Experience</span></h2>
 
     <div class="timeline">
       <article class="entry watch">
@@ -180,8 +215,8 @@
     </div>
   </section>
 
-  <section class="section" aria-labelledby="programmes">
-    <h2 class="section-title" id="programmes">Programmes</h2>
+  <section class="section" id="programmes" aria-labelledby="prog-t">
+    <h2 class="section-title" id="prog-t"><span>Programmes</span></h2>
 
     <div class="timeline">
       <article class="entry watch">
@@ -214,19 +249,23 @@
     </div>
   </section>
 
-  <section class="section" aria-labelledby="education">
-    <h2 class="section-title" id="education">Education</h2>
+  <section class="section" id="education" aria-labelledby="edu-t">
+    <h2 class="section-title" id="edu-t"><span>Education</span></h2>
 
     <div class="timeline">
       <article class="entry watch">
         <p class="entry-date">2025&ndash;27</p>
         <div class="entry-body">
           <h3 class="entry-title">IB Diploma, 10x International School, Bengaluru</h3>
-          <p>
-            38 out of 42 in the Grade 11 finals: 7 in Psychology SL and
-            Computer Science HL, 6 in Economics HL, Mathematics AI HL,
-            English A SL and Hindi B SL.
-          </p>
+          <p>38 out of 42 in the Grade 11 finals.</p>
+          <ul class="grades">
+            <li><b>7</b> Psychology SL</li>
+            <li><b>7</b> Computer Science HL</li>
+            <li><b>6</b> Economics HL</li>
+            <li><b>6</b> Mathematics AI HL</li>
+            <li><b>6</b> English A SL</li>
+            <li><b>6</b> Hindi B SL</li>
+          </ul>
         </div>
       </article>
 
@@ -240,8 +279,8 @@
     </div>
   </section>
 
-  <section class="section" aria-labelledby="leadership">
-    <h2 class="section-title" id="leadership">Leadership, sport and service</h2>
+  <section class="section" id="leadership" aria-labelledby="lead-t">
+    <h2 class="section-title" id="lead-t"><span>Leadership, sport and service</span></h2>
 
     <div class="timeline">
       <article class="entry watch">
@@ -250,8 +289,8 @@
           <h3 class="entry-title">Basketball, Don Bosco Park Circus</h3>
           <p>
             Starter across inter-school tournaments and captain of the Junior
-            NBA 3x3 team, running preparation and in-game strategy. First
-            place in an inter-school competition.
+            NBA 3x3 team, running preparation and in-game strategy. First place
+            in an inter-school competition.
           </p>
         </div>
       </article>
@@ -262,8 +301,7 @@
           <h3 class="entry-title">Table tennis, Captain of Team B</h3>
           <p>
             Led Team B at Boscofest, one of Kolkata's largest inter-school
-            fests. Second place, including a win over a top-ranked state
-            player.
+            fests. Second place, including a win over a top-ranked state player.
           </p>
         </div>
       </article>
@@ -274,23 +312,22 @@
           <h3 class="entry-title">Evara NGO</h3>
           <p>
             Student-led charitable trust in Kolkata working on accessibility,
-            awareness and inclusive opportunities for persons with
-            disabilities.
+            awareness and inclusive opportunities for persons with disabilities.
           </p>
         </div>
       </article>
     </div>
   </section>
 
-  <section class="section" aria-labelledby="skills">
-    <h2 class="section-title" id="skills">Skills and certifications</h2>
+  <section class="section" id="skills" aria-labelledby="skills-t">
+    <h2 class="section-title" id="skills-t"><span>Skills and certifications</span></h2>
 
-    <div class="grid watch">
-      <div class="cell">
+    <div class="grid">
+      <div class="cell watch">
         <h3 class="cell-title">Technical</h3>
         <p>Python, C++, SQL. Microsoft Office, Canva, Adobe Photoshop.</p>
       </div>
-      <div class="cell">
+      <div class="cell watch">
         <h3 class="cell-title">Courses</h3>
         <p>
           Financial Markets, Coursera, 2026.<br>
@@ -298,7 +335,7 @@
           Structured Query Language, TuteDude, 2025.
         </p>
       </div>
-      <div class="cell">
+      <div class="cell watch">
         <h3 class="cell-title">Outside school</h3>
         <p>
           Equity markets and valuation, financial modelling through DCF and
@@ -308,8 +345,8 @@
     </div>
   </section>
 
-  <footer class="section contact watch" aria-labelledby="contact">
-    <h2 class="section-title" id="contact">Get in touch</h2>
+  <footer class="section contact watch" id="contact" aria-labelledby="contact-t">
+    <h2 class="section-title" id="contact-t"><span>Get in touch</span></h2>
     <p class="contact-links">
       <a href="mailto:tanishk2109@gmail.com">tanishk2109@gmail.com</a>
       <a href="https://www.linkedin.com/in/tanishk-surana-b94608356/">LinkedIn</a>
@@ -319,27 +356,120 @@
 </main>
 
 <script>
-document.documentElement.classList.add('js');
+(function () {
+  var root = document.documentElement;
+  root.classList.add('js');
 
-document.addEventListener('DOMContentLoaded', function () {
   var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-  var items = document.querySelectorAll('.watch');
+  var fine = window.matchMedia('(hover: hover) and (pointer: fine)').matches;
 
-  if (reduce || !('IntersectionObserver' in window)) {
-    items.forEach(function (el) { el.classList.add('in'); });
-    return;
+  function ready(fn) {
+    if (document.readyState !== 'loading') fn();
+    else document.addEventListener('DOMContentLoaded', fn);
   }
 
-  var io = new IntersectionObserver(function (entries) {
-    entries.forEach(function (entry) {
-      if (!entry.isIntersecting) return;
-      entry.target.classList.add('in');
-      io.unobserve(entry.target);
-    });
-  }, { rootMargin: '0px 0px -12% 0px', threshold: 0.1 });
+  ready(function () {
 
-  items.forEach(function (el) { io.observe(el); });
-});
+    /* --- split the name into letters for a staggered reveal --- */
+    document.querySelectorAll('.name .line').forEach(function (line, li) {
+      var text = line.getAttribute('data-text') || '';
+      var frag = document.createDocumentFragment();
+      text.split('').forEach(function (ch, i) {
+        var outer = document.createElement('span');
+        outer.className = 'ch';
+        var inner = document.createElement('span');
+        inner.textContent = ch;
+        inner.style.animationDelay = (0.15 + li * 0.18 + i * 0.035) + 's';
+        outer.appendChild(inner);
+        frag.appendChild(outer);
+      });
+      line.appendChild(frag);
+    });
+
+    /* --- scroll reveals --- */
+    var items = document.querySelectorAll('.watch');
+    if (reduce || !('IntersectionObserver' in window)) {
+      items.forEach(function (el) { el.classList.add('in'); });
+    } else {
+      var io = new IntersectionObserver(function (entries) {
+        entries.forEach(function (e) {
+          if (!e.isIntersecting) return;
+          e.target.classList.add('in');
+          io.unobserve(e.target);
+        });
+      }, { rootMargin: '0px 0px -10% 0px', threshold: 0.12 });
+      items.forEach(function (el) { io.observe(el); });
+
+      var titles = document.querySelectorAll('.section-title');
+      var io2 = new IntersectionObserver(function (entries) {
+        entries.forEach(function (e) {
+          if (!e.isIntersecting) return;
+          e.target.classList.add('in');
+          io2.unobserve(e.target);
+        });
+      }, { rootMargin: '0px 0px -15% 0px', threshold: 0.5 });
+      titles.forEach(function (el) { io2.observe(el); });
+    }
+
+    /* --- scroll progress + active section --- */
+    var bar = document.getElementById('progress-bar');
+    var dots = Array.prototype.slice.call(document.querySelectorAll('.dots a'));
+    var sections = dots.map(function (d) {
+      return document.querySelector(d.getAttribute('href'));
+    });
+
+    var queued = false;
+    function onScroll() {
+      if (queued) return;
+      queued = true;
+      requestAnimationFrame(function () {
+        queued = false;
+        var h = document.body.scrollHeight - window.innerHeight;
+        if (bar) bar.style.transform = 'scaleX(' + (h > 0 ? window.scrollY / h : 0) + ')';
+
+        var mark = window.scrollY + window.innerHeight * 0.35;
+        var active = -1;
+        sections.forEach(function (s, i) {
+          if (s && s.offsetTop <= mark) active = i;
+        });
+        dots.forEach(function (d, i) {
+          d.classList.toggle('on', i === active);
+        });
+      });
+    }
+    window.addEventListener('scroll', onScroll, { passive: true });
+    onScroll();
+
+    /* --- pointer spotlight (desktop only) --- */
+    var spot = document.getElementById('spotlight');
+    if (fine && !reduce && spot) {
+      var tx = window.innerWidth / 2, ty = window.innerHeight * 0.3;
+      var cx = tx, cy = ty;
+      window.addEventListener('pointermove', function (e) {
+        tx = e.clientX; ty = e.clientY;
+      }, { passive: true });
+      (function loop() {
+        cx += (tx - cx) * 0.08;
+        cy += (ty - cy) * 0.08;
+        spot.style.transform = 'translate3d(' + (cx - 300) + 'px,' + (cy - 300) + 'px,0)';
+        requestAnimationFrame(loop);
+      })();
+      spot.style.opacity = '1';
+    }
+
+    /* --- entry hover tracks the cursor --- */
+    if (fine && !reduce) {
+      document.querySelectorAll('.entry, .cell').forEach(function (el) {
+        el.addEventListener('pointermove', function (e) {
+          var r = el.getBoundingClientRect();
+          el.style.setProperty('--mx', (e.clientX - r.left) + 'px');
+          el.style.setProperty('--my', (e.clientY - r.top) + 'px');
+        });
+      });
+    }
+
+  });
+})();
 </script>
 
 </body>
